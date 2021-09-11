@@ -23,7 +23,7 @@ const displaySearchResult = searchCountry => {
     const countryContainer = document.getElementById('countries');
     countryContainer.textContent = '';
     for(const country of searchCountry){
-        console.log(country);
+        // console.log(country);
         const div = document.createElement('div');
         div.classList.add('country');
         div.innerHTML = `
@@ -76,7 +76,7 @@ const countryByName = name => {
 }
 
 const displayCountryDetails = country => {
-    console.log(country);
+    // console.log(country);
     const modalContainer = document.getElementById('country-details');
     modalContainer.innerHTML = `
     <img src="${country.flag}">
